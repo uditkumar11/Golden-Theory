@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amarante">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asap:400,600i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="assets/main/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/main/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/main/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/main/aos/aos.css" rel="stylesheet">
+    <link href="assets/main/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+
+
+
+     
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+    <style>
+        footer{
+            position: relative;
+            bottom: 0;
+          }
+          .footer-distributed{
+            background-color: #292c2f;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: bold 16px sans-serif;
+          
+            padding: 55px 50px;
+            margin-top: 80px;
+          }
+          
+          .footer-distributed .footer-left,
+          .footer-distributed .footer-center,
+          .footer-distributed .footer-right{
+            display: inline-block;
+            vertical-align: top;
+          }
+          
+          .footer-distributed .footer-left{
+            width: 40%;
+          }
+          
+          .footer-distributed h3{
+            color:  #ffffff;
+            font: normal 36px 'Cookie', cursive;
+            margin: 0;
+          }
+          
+          .footer-distributed h3 span{
+            color:  #5383d3;
+          }
+          
+          
+          .footer-distributed .footer-links{
+            color:  #ffffff;
+            margin: 20px 0 12px;
+            padding: 0;
+          }
+          
+          .footer-distributed .footer-links a{
+            display:inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color:  inherit;
+          }
+          
+          .footer-distributed .footer-company-name{
+            color:  #8f9296;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+          }
+ 
+ 
+        .footer-distributed .footer-center{
+          width: 35%;
+        }
+        
+        .footer-distributed .footer-center i{
+          background-color:  #33383b;
+          color: #ffffff;
+          font-size: 25px;
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 42px;
+          margin: 10px 15px;
+          vertical-align: middle;
+        }
+        
+        .footer-distributed .footer-center i.fa-envelope{
+          font-size: 17px;
+          line-height: 38px;
+        }
+        
+        .footer-distributed .footer-center p{
+          display: inline-block;
+          color: #ffffff;
+          vertical-align: middle;
+          margin:0;
+        }
+        
+        .footer-distributed .footer-center p span{
+          display:block;
+          font-weight: normal;
+          font-size:14px;
+          line-height:2;
+        }
+        
+        .footer-distributed .footer-center p a{
+          color:  #5383d3;
+          text-decoration: none;;
+        }
+        
+        .footer-distributed .footer-right{
+          width: 20%;
+        }
+        
+        .footer-distributed .footer-company-about{
+          line-height: 20px;
+          color:  #92999f;
+          font-size: 13px;
+          font-weight: normal;
+          margin: 0;
+        }
+        
+        .footer-distributed .footer-company-about span{
+          display: block;
+          color:  #ffffff;
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        
+        .footer-distributed .footer-icons{
+          margin-top: 25px;
+        }
+        
+        .footer-distributed .footer-icons a{
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          cursor: pointer;
+          background-color:  #33383b;
+          border-radius: 2px;
+        
+          font-size: 20px;
+          color: #ffffff;
+          text-align: center;
+          line-height: 35px;
+        
+          margin-right: 3px;
+          margin-bottom: 5px;
+        }
+        
+        #contact {
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#contact .section-header {
+  padding-bottom: 30px;
+}
+
+#contact .contact-about h3 {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #007bff;
+}
+
+#contact .contact-about p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #888;
+}
+
+#contact .social-links {
+  padding-bottom: 20px;
+}
+
+#contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #fff;
+  color: #007bff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid #007bff;
+}
+
+#contact .social-links a:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+#contact .info {
+  color: #283d50;
+}
+
+#contact .info i {
+  font-size: 32px;
+  color: #007bff;
+  float: left;
+  line-height: 1;
+}
+
+#contact .info p {
+  padding: 0 0 10px 36px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+#contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+#contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+#contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+#contact .php-email-form input, #contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+#contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
+  background-color: #007bff;
+}
+
+#contact .php-email-form input {
+  padding: 20px 15px;
+}
+
+#contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+#contact .php-email-form button[type="submit"] {
+  background: #007bff;
+  border: 0;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+        
+        @media (max-width: 880px) {
+        
+          .footer-distributed{
+            font: bold 14px sans-serif;
+          
+          }
+        
+          .footer-distributed .footer-left,
+          .footer-distributed .footer-center,
+          .footer-distributed .footer-right{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+          }
+        
+          .footer-distributed .footer-center i{
+            margin-left: 0;
+          }
+        }
+  .text{
+  background: -webkit-linear-gradient(0deg, rgba(152,128,224,1) 11%, rgba(219,91,210,1) 32%, rgba(169,119,220,1) 57%, rgba(117,147,231,1) 73%, rgba(219,91,210,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    
+    
+</head>
+
+<body style="background: #fff;">
+    
+        
+        <div id="div-top">
+            <nav class="navbar navbar-light navbar-expand-md" style="background: rgba(255,255,255,1); position: fixed; width: 100%; z-index: 3;box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);">
+                <div class="container-fluid"><a class="navbar-brand" data-aos="fade-right" data-aos-delay="400" href="#" style="color: black;font-size: 25px;letter-spacing: 3px;font-family: Amarante, cursive;"><img src="assets/img/image111-removebg-preview.png" style="height: 40px;width: 45px;">Golden Theory</a><button data-toggle="collapse" class="navbar-toggler"
+                        data-target="#navcol-1" data-aos="fade-right" data-aos-delay="500" style="background-color: white;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                      <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" data-aos="fade-right" data-aos-delay="400" href="home.html" style="color: black;">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" data-aos="fade-right" data-aos-delay="500" href="gallery.html" style="color: black">Gallery</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" data-aos="fade-right" data-aos-delay="600" href="home.html" style="color: black">About</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" data-aos="fade-right" data-aos-delay="700" href="home.html" style="color: black">Contact</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- <h1 class="text-center" data-aos="fade-up" data-aos-delay="900" id="title">The Golden Ratio</h1>
+            <h1 class="text-center" data-aos="fade-up" data-aos-delay="1000" id="subtitle">A Complete Informative Page</h1> -->
+        </div>
+
+
+        <section id="portfolio" class="clearfix">
+          <div class="container" data-aos="fade-up">
+    
+            <header class="section-header">
+              <h3 class="section-title">Our Gallery</h3>
+            </header>
+    
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-12">
+                <ul id="portfolio-flters">
+                  <li data-filter="*" class="filter-active">All</li>
+                  <li data-filter=".filter-app">Nature</li>
+                  <li data-filter=".filter-card">Creatures</li>
+                  <li data-filter=".filter-web">Space</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                  <img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1394753368882-HE59CR623J1PWLDSBO23/ke17ZwdGBToddI8pDm48kJRqFJ19D4P4EwsC9z3fiewUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dkV64dCjSK7Zaaf7dwPYPO_gHf_vjqrS5WJoq1nmwotrP7cJNZlDXbgJNE9ef52e8w/image-asset.jpeg?format=2500w" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Space 1</a></h4>
+                    <p>Space</p>
+                    <div>
+                      <a href="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1394753368882-HE59CR623J1PWLDSBO23/ke17ZwdGBToddI8pDm48kJRqFJ19D4P4EwsC9z3fiewUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dkV64dCjSK7Zaaf7dwPYPO_gHf_vjqrS5WJoq1nmwotrP7cJNZlDXbgJNE9ef52e8w/image-asset.jpeg?format=2500w" data-gall="portfolioGallery" title="Space" class="venobox link-preview"><i class="ion ion-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img src="https://ssl.bigstockimages.com/0/3/1/large1500/130869914.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Nature 1</a></h4>
+                    <p>Nature</p>
+                    <div>
+                      <a href="https://ssl.bigstockimages.com/0/3/1/large1500/130869914.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Nature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="https://cdn.wallpapersafari.com/76/53/AHOwy6.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Creature 1</a></h4>
+                    <p>Creatures</p>
+                    <div>
+                      <a href="https://cdn.wallpapersafari.com/76/53/AHOwy6.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Creature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/3025562/pexels-photo-3025562.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Nature 2</a></h4>
+                    <p>Nature</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/3025562/pexels-photo-3025562.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="venobox link-preview" data-gall="portfolioGallery" title="Nature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/816608/pexels-photo-816608.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Space 2</a></h4>
+                    <p>Space</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/816608/pexels-photo-816608.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Space"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/3153679/pexels-photo-3153679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Nature 3</a></h4>
+                    <p>Nature</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/3153679/pexels-photo-3153679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="venobox link-preview" data-gall="portfolioGallery" title="Nature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="https://st2.depositphotos.com/1177973/11117/i/950/depositphotos_111174558-stock-photo-illustration-of-golden-ratio-in.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Creature 2</a></h4>
+                    <p>Creatures</p>
+                    <div>
+                      <a href="https://st2.depositphotos.com/1177973/11117/i/950/depositphotos_111174558-stock-photo-illustration-of-golden-ratio-in.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Creature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Space 3</a></h4>
+                    <p>Space</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Space"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="https://memolition.com/wp-content/uploads/2014/07/examples-of-the-golden-ratio-you-can-find-in-nature-55224.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Creature 3</a></h4>
+                    <p>Creatures</p>
+                    <div>
+                      <a href="https://memolition.com/wp-content/uploads/2014/07/examples-of-the-golden-ratio-you-can-find-in-nature-55224.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Creature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/4365100/pexels-photo-4365100.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Nature 4</a></h4>
+                    <p>Nature</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/4365100/pexels-photo-4365100.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Nature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/161154/stained-glass-spiral-circle-pattern-161154.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Nature 5</a></h4>
+                    <p>Nature</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/161154/stained-glass-spiral-circle-pattern-161154.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Nature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/1289363/pexels-photo-1289363.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Nature 6</a></h4>
+                    <p>Nature</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/1289363/pexels-photo-1289363.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Nature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/3573555/pexels-photo-3573555.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Nature 7</a></h4>
+                    <p>Nature</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/3573555/pexels-photo-3573555.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Nature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/2388922/pexels-photo-2388922.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Nature 8</a></h4>
+                    <p>Nature</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/2388922/pexels-photo-2388922.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Nature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/340981/pexels-photo-340981.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Nature 9</a></h4>
+                    <p>Nature</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/340981/pexels-photo-340981.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Nature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/33234/nautilus-shell-shimmer-silver.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Creature 4</a></h4>
+                    <p>Creatures</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/33234/nautilus-shell-shimmer-silver.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Creature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="https://www.freepik.com/blog/wp-content/uploads/2018/02/gm1.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Creature 9</a></h4>
+                    <p>Creatures</p>
+                    <div>
+                      <a href="https://www.freepik.com/blog/wp-content/uploads/2018/02/gm1.png" class="venobox link-preview" data-gall="portfolioGallery" title="Creature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/326536/pexels-photo-326536.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Creature 5</a></h4>
+                    <p>Creatures</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/326536/pexels-photo-326536.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Creature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/209074/pexels-photo-209074.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Creature 6</a></h4>
+                    <p>Creatures</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/209074/pexels-photo-209074.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Creature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/1145274/pexels-photo-1145274.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Creature 7</a></h4>
+                    <p>Creatures</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/1145274/pexels-photo-1145274.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Creature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="https://www.goldennumber.net/wp-content/uploads/finger-golden-spiral.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Creature 8</a></h4>
+                    <p>Creatures</p>
+                    <div>
+                      <a href="https://www.goldennumber.net/wp-content/uploads/finger-golden-spiral.png" class="venobox link-preview" data-gall="portfolioGallery" title="Creature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="https://i.pinimg.com/originals/70/3c/bc/703cbc23ac0f85cba5368547c502dcef.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Creature 10</a></h4>
+                    <p>Creatures</p>
+                    <div>
+                      <a href="https://i.pinimg.com/originals/70/3c/bc/703cbc23ac0f85cba5368547c502dcef.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Creature"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Space 4</a></h4>
+                    <p>Space</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Space"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/1938348/pexels-photo-1938348.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Space 5</a></h4>
+                    <p>Space</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/1938348/pexels-photo-1938348.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Space"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                  <img src="https://images.pexels.com/photos/39561/solar-flare-sun-eruption-energy-39561.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Space 6</a></h4>
+                    <p>Space</p>
+                    <div>
+                      <a href="https://images.pexels.com/photos/39561/solar-flare-sun-eruption-energy-39561.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="venobox link-preview" data-gall="portfolioGallery" title="Space"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+               
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                  <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fbillretherford%2Ffiles%2F2018%2F01%2FPIA12114_web_1024.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Space 7</a></h4>
+                    <p>Space</p>
+                    <div>
+                      <a href="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fbillretherford%2Ffiles%2F2018%2F01%2FPIA12114_web_1024.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Space"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                  <img src="https://thumbs-prod.si-cdn.com/Px4_VlFa26PxwOlqMa-kN1wVcZk=/420x240/https://public-media.si-cdn.com/filer/newrings-Saturn-cassini-631.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4><a href="portfolio-details.html">Space 8</a></h4>
+                    <p>Space</p>
+                    <div>
+                      <a href="https://thumbs-prod.si-cdn.com/Px4_VlFa26PxwOlqMa-kN1wVcZk=/420x240/https://public-media.si-cdn.com/filer/newrings-Saturn-cassini-631.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Space"><i class="ion ion-eye"></i></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+                     </div>
+    
+               
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- footer -->
+        <footer class="footer-distributed" style="margin-top: 0;">
+ 
+            <div class="footer-left" >
+          
+            <h3 style="font-family: Amarante, cursive;"><img src="assets/img/image111-removebg-preview.png" style="height: 50px; width: 60px;">Golden <span>Theory</span></h3>
+          
+            <p class="footer-links">
+            <a href="home.html">Home</a>
+          ·
+            <a href="home.html">Team</a>
+          ·
+            <a href="home.html">About</a>
+            ·
+          <a href="#">FAQs</a>
+          ·
+          <a href="gallery.html">Gallery</a>
+          
+            </p>
+          
+            <p class="footer-company-name">Golden Theory &copy; 2020</p>
+            </div>
+          
+            <div class="footer-center">
+          
+            <div>
+            <i class="fa fa-map-marker-alt"></i>
+            <p><span>#147, #148 Industrial Area Phase 1</span> Chandigarh, India</p>
+            </div>
+          
+            <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 xxx xxx xxxx</p>
+            </div>
+          
+            <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">contact@goldentheory.com</a></p>
+            </div>
+          
+            </div>
+          
+            <div class="footer-right">
+          
+            <p class="footer-company-about">
+            <span>About the website</span>
+              Golden Theory is a website to learn about golden ratio ,golden spiral &amp; many other concepts.
+            </p>
+          
+            <div class="footer-icons">
+          
+            <a href="#"><i class="fab fa-facebook s-icon-1"></i></a>
+            <a href="#"><i class="fab fa-twitter s-icon-2"></i></a>
+            <a href="#"><i class="fab fa-linkedin s-icon-3"></i></a>
+            <a href="#"><i class="fab fa-github s-icon-4"></i></a>
+          
+            </div>
+          
+            </div>
+          
+            </footer>
+    <script src="assets/main/jquery/jquery.min.js"></script>
+    <script src="assets/main/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/main/counterup/counterup.min.js"></script>
+    <script src="assets/main/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/main/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/main/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/main/venobox/venobox.min.js"></script>
+    <script src="assets/main/aos/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+
+</html>

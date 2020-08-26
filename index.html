@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Golden Theory</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amarante">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asap:400,600i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/main/ionicons/css/ionicons.min.css">
+
+
+    
+    
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+    <style>
+        @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+          body {
+            margin:0;
+          }
+
+          h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight:300;
+            letter-spacing: 2px;
+            font-size:48px;
+          }
+          p {
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1px;
+            font-size:14px;
+            color: #333333;
+          }
+
+          .header {
+            position:relative;
+            text-align:center;
+            background: transparent;
+            color:skyblue;
+          }
+          .logo {
+            width:50px;
+            fill:white;
+            padding-right:15px;
+            display:inline-block;
+            vertical-align: middle;
+          }
+
+          .inner-header {
+            height:65vh;
+            width:100%;
+            margin: 0;
+            padding: 0;
+          }
+
+          .flex { /*Flexbox for containers*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+
+          .waves {
+            position:relative;
+            width: 100%;
+            height:15vh;
+            margin-bottom:-7px; /*Fix for safari gap*/
+            min-height:100px;
+            max-height:150px;
+          }
+
+          .content {
+            position:relative;
+            height:20vh;
+            text-align:center;
+            background-color: white;
+          }
+
+          /* Animation */
+
+          .parallax > use {
+            animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+          }
+          .parallax > use:nth-child(1) {
+            animation-delay: -2s;
+            animation-duration: 7s;
+          }
+          .parallax > use:nth-child(2) {
+            animation-delay: -3s;
+            animation-duration: 10s;
+          }
+          .parallax > use:nth-child(3) {
+            animation-delay: -4s;
+            animation-duration: 13s;
+          }
+          .parallax > use:nth-child(4) {
+            animation-delay: -5s;
+            animation-duration: 20s;
+          }
+          @keyframes move-forever {
+            0% {
+            transform: translate3d(-90px,0,0);
+            }
+            100% { 
+              transform: translate3d(85px,0,0);
+            }
+          }
+          /*Shrinking for mobile*/
+          @media (max-width: 768px) {
+            .waves {
+              height:40px;
+              min-height:40px;
+            }
+            .content {
+              height:30vh;
+            }
+            h1 {
+              font-size:24px;
+            }
+          }
+
+
+
+
+          footer{
+            position: relative;
+            bottom: 0;
+          }
+          .footer-distributed{
+            background-color: #292c2f;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: bold 16px sans-serif;
+          
+            padding: 55px 50px;
+            margin-top: 80px;
+          }
+          
+          .footer-distributed .footer-left,
+          .footer-distributed .footer-center,
+          .footer-distributed .footer-right{
+            display: inline-block;
+            vertical-align: top;
+          }
+          
+          .footer-distributed .footer-left{
+            width: 40%;
+          }
+          
+          .footer-distributed h3{
+            color:  #ffffff;
+            font: normal 36px 'Cookie', cursive;
+            margin: 0;
+          }
+          
+          .footer-distributed h3 span{
+            color:  #5383d3;
+          }
+          
+          
+          .footer-distributed .footer-links{
+            color:  #ffffff;
+            margin: 20px 0 12px;
+            padding: 0;
+          }
+          
+          .footer-distributed .footer-links a{
+            display:inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color:  inherit;
+          }
+          
+          .footer-distributed .footer-company-name{
+            color:  #8f9296;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+          }
+ 
+ 
+        .footer-distributed .footer-center{
+          width: 35%;
+        }
+        
+        .footer-distributed .footer-center i{
+          background-color:  #33383b;
+          color: #ffffff;
+          font-size: 25px;
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 42px;
+          margin: 10px 15px;
+          vertical-align: middle;
+        }
+        
+        .footer-distributed .footer-center i.fa-envelope{
+          font-size: 17px;
+          line-height: 38px;
+        }
+        
+        .footer-distributed .footer-center p{
+          display: inline-block;
+          color: #ffffff;
+          vertical-align: middle;
+          margin:0;
+        }
+        
+        .footer-distributed .footer-center p span{
+          display:block;
+          font-weight: normal;
+          font-size:14px;
+          line-height:2;
+        }
+        
+        .footer-distributed .footer-center p a{
+          color:  #5383d3;
+          text-decoration: none;;
+        }
+        
+        .footer-distributed .footer-right{
+          width: 20%;
+        }
+        
+        .footer-distributed .footer-company-about{
+          line-height: 20px;
+          color:  #92999f;
+          font-size: 13px;
+          font-weight: normal;
+          margin: 0;
+        }
+        
+        .footer-distributed .footer-company-about span{
+          display: block;
+          color:  #ffffff;
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        
+        .footer-distributed .footer-icons{
+          margin-top: 25px;
+        }
+        
+        .footer-distributed .footer-icons a{
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          cursor: pointer;
+          background-color:  #33383b;
+          border-radius: 2px;
+        
+          font-size: 20px;
+          color: #ffffff;
+          text-align: center;
+          line-height: 35px;
+        
+          margin-right: 3px;
+          margin-bottom: 5px;
+        }
+        
+        
+        @media (max-width: 880px) {
+        
+          .footer-distributed{
+            font: bold 14px sans-serif;
+          
+          }
+        
+          .footer-distributed .footer-left,
+          .footer-distributed .footer-center,
+          .footer-distributed .footer-right{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+          }
+        
+          .footer-distributed .footer-center i{
+            margin-left: 0;
+          }
+          .main {
+            line-height: normal;
+            font-size: auto;
+          }
+        
+        }
+
+          .carousel_wrapper {
+            position: relative;
+            width: 320px;
+            margin: 100px auto 0 auto;
+            perspective: 1000px;
+            margin-bottom: 35%;
+          }
+
+          .carousel {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transform: rotateY(-360deg) translateZ(-412px); 
+            animation: swirl 40s steps(10000, end) infinite; 
+            transition: 0.5s ease;
+          }
+
+          .slide {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 300px;
+            height: 187px;
+          }
+
+          .slide img {
+            width: 200px;
+            height: 125px;
+            border: 2px inset white;
+            cursor: pointer;
+            transition: 0.2s ease;
+          }
+          .slide img:hover{
+            width: 220px;
+            height: 145px;
+          }
+          .carousel:hover{
+              animation-play-state: paused;
+          }
+          .slide.one {
+            transform: rotateY(0deg) translateZ(412px);
+          }
+          .slide.two {
+            transform: rotateY(45deg) translateZ(412px);
+          }
+          .slide.three {
+            transform: rotateY(90deg) translateZ(412px);
+          }
+          .slide.four {
+            transform: rotateY(135deg) translateZ(412px);
+          }
+          .slide.five {
+            transform: rotateY(180deg) translateZ(412px);
+          }
+          .slide.six {
+            transform: rotateY(225deg) translateZ(412px);
+          }
+          .slide.seven {
+            transform: rotateY(270deg) translateZ(412px);
+          }
+          .slide.eight {
+            transform: rotateY(315deg) translateZ(412px);
+          }
+          
+
+          .logo-animate{
+            animation: logoanimate 5s steps(10000, end) infinite; 
+          }
+
+          @keyframes logoanimate {   
+            0% {
+              transform: rotate(0deg);
+            }
+            40%{
+              transform: rotate(-40deg);
+            }
+            50%{
+              transform: rotate(40deg);
+            }
+            65%{
+              transform: rotate(30deg);
+            }
+            80%{
+              transform: rotate(50deg);
+            }
+            100%{
+              transform: rotate(360deg);
+            }
+          } 
+
+          @keyframes swirl {   
+            from {
+              transform: rotateY(-360deg);
+            }
+            to {
+              transform: rotateY(0deg);
+            }
+          } 
+                    
+          @media (max-width: 48em) {
+
+              .carousel,.carousel_wrapper,.slide{
+                  display: none;
+              }
+          }
+
+          .s-icon-1:hover{
+              color: #3b5998;
+              transform: scale(1.2);
+          }
+          .s-icon-2:hover{
+              color: #00acee;
+              transform: scale(1.2);
+          }
+          .s-icon-3:hover{
+              color: #0e76a8;
+              transform: scale(1.2);
+          }
+          .s-icon-4:hover{
+              transform: scale(1.2);
+          }
+
+          table,td,tr,th{
+             width: 100%;
+          }
+
+td{
+
+  padding: 5px;
+  padding-right: 20px;
+}
+          
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body style="overflow-x: hidden;">
+    <section class="d-flex flex-column justify-content-between" data-bs-parallax-bg="true" id="header" style="background: url(assets/img/wallpaperflare.com_wallpaper-111.jpg);width: 100%;height: 100vh;background-position: center;background-size: cover;background-repeat: no-repeat;color: white;">
+        
+        <div id="div-top">
+            <nav class="navbar navbar-light navbar-expand-md" style="background: rgba(255,255,255,1); position: fixed; width: 100%; z-index: 3; box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);">
+                <div class="container-fluid"><a class="navbar-brand" data-aos="fade-right" data-aos-delay="400" href="#" style="color: black;font-size: 25px;letter-spacing: 3px;font-family: Amarante, cursive;"><img src="assets/img/image111-removebg-preview.png" style="height: 40px;width: 45px;">Golden Theory</a><button data-toggle="collapse" class="navbar-toggler"
+                        data-target="#navcol-1" data-aos="fade-right" data-aos-delay="500" style="background-color: white;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" data-aos="fade-right" data-aos-delay="400" href="home.html" style="color: black;">Home</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" data-aos="fade-right" data-aos-delay="500" href="gallery.html" style="color: black">Gallery</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" data-aos="fade-right" data-aos-delay="600" href="home.html" style="color: black">About</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" data-aos="fade-right" data-aos-delay="700" href="home.html" style="color: black">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- <h1 class="text-center" data-aos="fade-up" data-aos-delay="900" id="title">The Golden Ratio</h1>
+            <h1 class="text-center" data-aos="fade-up" data-aos-delay="1000" id="subtitle">A Complete Informative Page</h1> -->
+        </div>
+
+        <!--Hey! This is the original version
+of Simple CSS Waves-->
+
+<div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+    <img src="assets/img/output-onlinepngtools-removebg-preview.png" class="logo-animate" data-aos="zoom-in-left" data-aos-delay="300" >
+    </div>
+    
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+    
+    </div>
+    <!--Header ends-->
+    
+    <!--Content starts-->
+    <!-- <div class="content flex mb-n3">
+    <p>Golden Theory</p>
+    </div> -->
+    <!--Content ends-->
+
+
+        <!-- <div id="div-bottom">
+            <div class="container" id="header-container">
+                <div class="row">
+                    <div class="col">
+                        <p class="text-center p-common" data-aos="fade-down" data-aos-delay="1100">Created By</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-center p-name" data-aos="fade-down" data-aos-delay="1200">Golden Ratio</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-center p-name" data-aos="fade-down" data-aos-delay="1300">Name 2</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <div style="width: 100%; height: auto; background: white; color: #131419; padding: 40px;">
+        <center><h3 style="margin-top: 20px; margin-bottom: 30px; font-weight: bold; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="500">Golden Theory</h3></center>
+        <center><h6 style="margin-top: 15px; margin-bottom: 30px; font-weight: medium; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="500">The Complete Informative Website For Golden Theory</h6></center>
+        <center><h6 style="margin-top: 15px; margin-bottom: 30px; font-size: 13px; font-weight: medium; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="500"><img src="assets/img/image111-removebg-preview.png" style="width: 210px; height: 180px;" ></h6></center>
+        <!-- carousel begin -->
+        
+
+        
+
+<div class="carousel_wrapper" style="margin-bottom: 40%;">
+  <div class="carousel">
+    <div class="slide one">
+      <!-- <img src="assets/img/Crh7m42-golden-ratio-wallpaper.jpg" data-aos="fade-right" data-aos-delay="400"/> -->
+      <img src="https://miro.medium.com/max/1382/1*gOzXlWhe4TC9wtvPh3cFQA.jpeg" data-aos="fade-right" data-aos-delay="400"/>
+    </div>
+    <div class="slide two">
+      <img src="https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2015/04/3044877-poster-p-1-the-golden-ratio-designs-biggest-urban-legend.jpg" data-aos="fade-left" data-aos-delay="400" />
+    </div>
+    <div class="slide three">
+      <img src="https://www.geogebra.org/resource/b5TKp3A8/VBABzYI768WDpcVs/material-b5TKp3A8.png" data-aos="fade-right" data-aos-delay="400" />
+    </div>
+    <div class="slide four">
+      <img src="https://images.fastcompany.net/image/upload/w_596,c_limit,q_auto:best,f_auto/fc/3044877-inline-i-4a-the-golden-ratio-designs-biggest-urban-legend.jpg" data-aos="fade-left" data-aos-delay="400"/>
+    </div>
+    <div class="slide five">
+      <img src="https://line25.com/wp-content/uploads/2019/11/architecture.jpg" data-aos="fade-right" data-aos-delay="400" />
+    </div>
+    <div class="slide six">
+      <img src="https://image.slidesharecdn.com/goldenmeanpresentation01-120330091847-phpapp01/95/golden-mean-presentation01-28-728.jpg?cb=1333099201" data-aos="fade-left" data-aos-delay="400"/>
+    </div>
+    <div class="slide seven">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSB9_ak_e1u8rL8tTWotLBEv6r6e5dCBxl31g&usqp=CAU" data-aos="fade-right" data-aos-delay="400" />
+    </div>
+    <div class="slide eight">
+      <img src="https://i.pinimg.com/originals/36/01/86/3601860463c556c235de16aa1c215dfb.png" data-aos="fade-left" data-aos-delay="400"/>
+    </div>
+    
+    
+  
+  </div><!-- / .carousel -->
+</div><!-- / .carousel_wrapper -->
+
+
+
+        <!-- carousel end -->
+    </div>
+    <section class="d-flex flex-column justify-content-center" data-bs-parallax-bg="true" id="page1" style="background-image: url(assets/img/1601735.jpg);color: rgb(0,0,0);width: 100%;height: 87vh;background-position: center;background-size: cover;background-repeat: no-repeat;background-color: #cdd2d5;"></section>
+    <div style="width: 100%; height: auto; background: white; color: #131419; padding: 40px;" id = "first">
+        <center><h3 style="margin-top: 20px; margin-bottom: 30px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">Golden Ratio ???</h3></center>
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+            What is all the fuss about the famous golden ratio? Why is it that whenever you lookup for Golden Ratio, all you find is an image that looks like one above. Why are structures or patterns in golden ratio perceived to be aesthetically pleasing? Is there something more to golden ratio than we know of? If you also share this intrigue, let us break it down and try to understand what golden ratio is and why should it be of an importance to us as designers?ood design has been up for debate for as long as we’ve been creating. There are endless forums, social media threads, and in-person conversations about what makes for great design, with everyone contributing their own point of view.
+        </p>
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+            That’s the beauty of design, right? Everyone can interpret it differently.
+            
+            
+            While there will never be a one-size-fits-all approach for design, there is a concrete, mathematical approach that can help us get one step closer to creating amazing design experiences every time: the Golden Ratio.
+            
+            The Golden Ratio is a mathematical ratio you can find almost anywhere, like nature, architecture, painting, and music. When specifically applied to design specifically, it creates an organic, balanced, and aesthetically pleasing composition.
+            
+        </p>
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+          Golden ratio, also known as the golden section, golden mean, or divine proportion, in mathematics, the irrational number (1 + Square root of√5)/2, often denoted by the Greek letter ϕ or τ, which is approximately equal to 1.618. It is the ratio of a line segment cut into two pieces of different lengths such that the ratio of the whole segment to that of the longer segment is equal to the ratio of the longer segment to the shorter segment. The origin of this number can be traced back to Euclid, who mentions it as the “extreme and mean ratio” in the Elements. In terms of present day algebra, letting the length of the shorter segment be one unit and the length of the longer segment be x units gives rise to the equation (x + 1)/x = x/1; this may be rearranged to form the quadratic equation x2 – x – 1 = 0, for which the positive solution is x = (1 + Square root of√5)/2, the golden ratio.</p>
+
+        <div style="text-align: center;">
+            <img src="assets/img/man-Vitruvian-figure-study-canon-Leonardo-da.jpg" style="width: 30vw; margin: 20px; margin-bottom:40px" data-aos="zoom-in-right" data-aos-delay="400">
+            <p style="margin-bottom: 40px; font-family: Amarante, cursive; font-size: x-small;text-align: center;" data-aos="fade-right" data-aos-delay="200">Vitruvian man, a figure study by Leonardo da Vinci (c. 1509) illustrating the proportional canon laid down by the Classical Roman architect Vitruvius; in the Academy of Fine Arts, Venice.</p>
+            <p style="margin-bottom: 40px; font-family: Amarante, cursive; font-size: x-small;text-align: center;" data-aos="fade-right" data-aos-delay="200"><em>Foto Marburg/Art Resource, New York</em></p>
+
+        </div>
+        
+        
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+          The golden ratio occurs in many mathematical contexts. It is geometrically constructible by straightedge and compass, and it occurs in the investigation of the Archimedean and Platonic solids. It is the limit of the ratios of consecutive terms of the Fibonacci number sequence 1, 1, 2, 3, 5, 8, 13,…, in which each term beyond the second is the sum of the previous two, and it is also the value of the most basic of continued fractions, namely 1 + 1/(1 + 1/(1 + 1/(1 +⋯.
+          
+          In modern mathematics, the golden ratio occurs in the description of fractals, figures that exhibit self-similarity and play an important role in the study of chaos and dynamical systems.
+        </p>
+    </div>
+    <section class="d-flex flex-column justify-content-center" data-bs-parallax-bg="true" id="page1" style="background-image: url(https://wallpapercave.com/wp/wp4332350.jpg);color: rgb(0,0,0);width: 100%;height: 87vh;background-position: center;background-size: cover;background-repeat: no-repeat;background-color: #cdd2d5;"></section>
+    <div style="width: 100%; height: auto; background: white; color: #131419; padding: 40px;" id="second">
+        <center><h3 style="margin-top: 20px; margin-bottom: 30px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">Emergence Theory and the Golden Ratio</h3></center>
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+          Emergence theory predicts a fundamental, natural phenomenon that is so strange yet so prevalent that, with no physics theory having ever explained it, has been largely ignored by the scientific establishment and often seen as the stuff of amateur scientists and hobbyists. This phenomenon is the ubiquity of the golden ratio in nature from the micro (including the Planck scale) to the macro scale. Upon learning of a golden ratio related fact, most scientists will often treat it as a coincidence. However, the statistical probability of the golden ratio’s unrelenting prevalence to such high accuracy is practically zero.
+        </p>
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+            
+Many of the ways the golden ratio (as well as its rational form, the Fibonacci sequence) appears in nature are well-known –  a quick list of examples includes flower petals, seed heads, pine cones, shells, spiral galaxies, hurricanes, faces, DNA molecules and many more. None of this is new. It would be news to many people, however, that the golden ratio makes many precise (100% accuracy) and near-precise (accuracy of and near 99.99…%) appearances in values related to astronomical bodies that are often surprising and interesting. For example it appears, notably, in black hole physics: the golden ratio is precisely the point where a black hole’s modified heat changes from positive to negative, and it is part of the equation for the lower bound on black hole entropy. The golden ratio even relates to the loop quantum gravity parameter to black hole entropy. The three formulas respectively can be seen in this graphic:
+        </p>
+         
+        <div style="text-align: center;">
+          <img src="assets/img/Black-hole-3-1024x577.png" style="width: 30vw; margin: 20px; margin-bottom:40px" data-aos="zoom-in-right" data-aos-delay="400">
+          <p style="margin-bottom: 40px; font-family: Amarante, cursive; font-size: x-small;text-align: center;" data-aos="fade-right" data-aos-delay="200">Therefore, the golden ratio may be the fundamental constant of nature.</p>
+          
+
+      </div>
+
+      <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+        Black holes are where general relativity and quantum mechanics converge at their limits. Any unification model (“theory of everything”) must include these two theories. In binary matrices, which were used by Heisenberg to describe quantum mechanics, the highest probability non-trivial eigenvalues are the golden ratio, and negative one over the golden ratio. The golden ratio appears fundamentally in quantum mechanics and in black holes. The golden ratio appears in atoms as well. The atomic radius of hydrogen in methane is the Bohr radius over the golden ratio. In 1993 Lucien Hardy of the Perimeter Institute discovered that the probability of entanglement for two particles projected in tandem is the golden ratio over negative 5.      
+      
+      </p>
+
+     
+
+      
+
+    </div>
+
+   
+    <section class="d-flex flex-column justify-content-center" data-bs-parallax-bg="true" id="page1" style="background-image: url(https://wallpapercave.com/wp/wp4332368.jpg);color: rgb(0,0,0);width: 100%;height: 87vh;background-position: center;background-size: cover;background-repeat: no-repeat;background-color: #cdd2d5;"></section>
+    <div style="width: 100%; height: auto; background: white; color: #131419; padding: 40px;" id="third">
+        <center><h3 style="margin-top: 20px; margin-bottom: 30px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">Goden ratio in Quasicrystals</h3></center>
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+         Quasicrystals are golden ratio based geometric languages. They are codes made of geometric symbols. Since reality is three dimensional, we suggest to look first to see if reality might be written in the code 3D quasicrystals. Time and motion could simply be ordered sequences of different 3D quasicrystal configurations, “played” rapidly like a 3D strip of film frames. Ideas like the invariance of the speed of light could be explained using new ideas like an update of the de Broglie electron clock model.
+        </p>
+
+          
+        <div style="text-align: center;">
+          <img src="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/product2/007/quasicrystal_5fold.eps/_jcr_content/renditions/quasicrystal_5fold-large.jpg" style="width: 30vw; margin: 20px; margin-bottom:40px" data-aos="zoom-in-right" data-aos-delay="400">
+          <p style="margin-bottom: 40px; font-family: Amarante, cursive; font-size: x-small;text-align: center;" data-aos="fade-right" data-aos-delay="200">Quasicrystals - Micro/NanoElectronics </p>
+          
+        </div>  
+
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+          Any 3D quasicrystal is really just an interactive network of 1D quasicrystals. The most foundational and simplest 1D quasicrystal, the Fibonacci chain, has two geometric “letters” in its language. (Yes, quasicrystals are languages or codes because they fully meet the definition by having (1) a finite set of two or more symbols, (2) symbol matching rules and (3) syntactical degrees of freedom.) The two geometric letters in a Fibonacci chain quasicrystal are lengths with a ratio of one to the other that is the golden ratio, where the long length has a ratio to the short length that is the same ratio as the long length to the sum of the long + short length. It’s the only ratio in math that switch hits like this.
+        </p>
+
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+          Languages that have a lot of letters are costly. Imagine if the English language had 23 million letters! Working with it would be mentally difficult and would certainly not conserve choices. Let’s clarify: all choices are not equally resource intensive. Does it require more mental energy to choose between vanilla and chocolate or to choose from 100 delicious flavors of ice cream? Similarly, languages with fewer letters require less resources for each choice of letter. This is one reason why this text you’re reading is expressed as binary code under the secondary level of English words. In a geometric code, like the quasicrystal code nature might be using, a two letter code might be powerful as well. And the only way to get networks of 1D codes to act as an interactive 3D network of 1D codes is to use the golden ratio. Explaining that might take a bit more time and a little math. But suffice it to say that the golden ratio is a powerful tool for building physics.
+        </p>  
+        
+    </div>
+
+   
+    <section class="d-flex flex-column justify-content-center" data-bs-parallax-bg="true" id="page1" style="background-image: url(https://wallpapercave.com/wp/wp4232445.jpg);color: rgb(0,0,0);width: 100%;height: 87vh;background-position: center;background-size: cover;background-repeat: no-repeat;background-color: #cdd2d5;"></section>
+    <div style="width: 100%; height: auto; background: white; color: #131419; padding: 40px;" id="fourth">
+        <center><h3 style="margin-top: 20px; margin-bottom: 30px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">The Golden Ratio In Paintings</h3></center>
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+          There have been studies which suggest designs set out using the golden ratio are aethetically pleasing. We can use the golden ratio to help design our paintings and position our subjects.
+        </p>
+
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+          Who would have thought art and maths could have such a close connection? Luca Pacioli (a contemporary of Leonardo da Vinci) went as far as saying:
+        </p>  
+
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+          “Without mathematics there is no art.” 
+        </p>  
+
+        <div style="text-align: center;">
+          <img src="https://drawpaintacademy.com/wp-content/uploads/2017/10/Georges-Seurat-Bathers-at-Asni%C3%A8res-Adjust.jpg" style="width: 30vw; margin: 20px; margin-bottom:40px" data-aos="zoom-in-right" data-aos-delay="400">
+          <p style="margin-bottom: 40px; font-family: Amarante, cursive; font-size: x-small;text-align: center;" data-aos="fade-right" data-aos-delay="200">Georges Seurat, Bathers at Asnières, 1884</p>
+          </div>          
+
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+          In this painting by Georges Seurat, the golden ratio appears to have been used throughout the painting - to define the horizon, to place points of interest and to create balance in what would appear to be a very active scene.
+          <br>
+
+        </p>
+
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+          Georges Seurat also seems to have used the  golden ratio in this painting. Notice the positioning of the jetty, the sail mast and the horizon.
+        </p>           
+        
+    </div>
+
+
+    <section class="d-flex flex-column justify-content-center" data-bs-parallax-bg="true" id="page1" style="background-image: url(https://wallpapercave.com/wp/wp4332393.jpg);color: rgb(0,0,0);width: 100%;height: 87vh;background-position: center;background-size: cover;background-repeat: no-repeat;background-color: #cdd2d5;"></section>
+    <div style="width: 100%; height: auto; background: white; color: #131419; padding: 40px;" id="fifth">
+      <center><h3 style="margin-top: 20px; margin-bottom: 30px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">Golden Ratio In Solar System and Universe</h3></center>
+      <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+        Curiously enough, we even find golden ratio relationships in the solar system and universe. The diameters of the Earth and Moon form a triangle whose dimensions are based on the mathematical characteristics of phi. The distances of the planets from the sun correlate surprisingly closely to exponential powers of Phi. The beautiful rings of Saturn are very close in dimension to the golden ratio of the planet’s diameter. NASA released findings in 2003 that the shape of the Universe is a dodecahedron based on Phi.
+      </p>
+
+
+      <div style="text-align: center;">
+        <img src="https://www.goldennumber.net/wp-content/uploads/2012/05/saturn-phi1.gif" style="width: 30vw; margin: 20px; margin-bottom:40px" data-aos="zoom-in-right" data-aos-delay="400">
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive; font-size: x-small;text-align: center;" data-aos="fade-right" data-aos-delay="200"> Appearances of Phi, the Golden Ratio, in the Solar System</p>
+        </div>          
+
+                 
+        <center><h4 style="margin-top: 20px; margin-bottom: 30px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">New Discoveries involving the Golden Ratio</h4></center>
+        <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+          The Golden Ratio continues to open new doors in our understanding of life and the universe. It appeared in Roger Penrose’s discovery in the 1970’s of “Penrose Tiles,” which allowed surfaces to be tiled in five-fold symmetry, a task previously thought impossible. It appeared again in the 1980’s in the three-dimensional molecular arrangement of quasi-crystals, a newly discovered form of matter. As we enter the 21st century, Phi seems to be having a rebirth in integrating knowledge across a wide variety of fields of study, including time and quantum physics.
+       
+        </p>
+           
+      
+  </div>
+
+    
+
+
+  <section class="d-flex flex-column justify-content-center" data-bs-parallax-bg="true" id="page1" style="background-image: url(https://wallpapercave.com/wp/wp4332459.jpg);color: rgb(0,0,0);width: 100%;height: 87vh;background-position: center;background-size: cover;background-repeat: no-repeat;background-color: #cdd2d5;"></section>
+  <div style="width: 100%; height: auto; background: white; color: #131419; padding: 40px;" id="sixth">
+    <center><h3 style="margin-top: 20px; margin-bottom: 30px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">Spiritual Aspects about Golden Ratio</h3></center>
+    <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+      The description of this golden proportion as the Divine proportion is perhaps fitting because it is seen by many as a door to a deeper understanding of beauty and spirituality in life, unveiling a hidden harmony or connectedness in so much of what we see. That’s an incredible role for a single number to play, but then again this one number has played an incredible role in human history and in the foundations of life itself. The line between its mathematical and mystical aspects is thus not easily drawn.
+     </p>
+
+
+    <div style="text-align: center;">
+      <img src="https://i.pinimg.com/originals/40/2c/a2/402ca2e7dfc084a4c1882279fedb7154.jpg" style="width: 30vw; margin: 20px; margin-bottom:40px" data-aos="zoom-in-right" data-aos-delay="400">
+      <p style="margin-bottom: 40px; font-family: Amarante, cursive; font-size: x-small;text-align: center;" data-aos="fade-right" data-aos-delay="200">Golden ratio in Meditation</p>
+      </div>          
+
+               
+     <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+        Phi does not appear explicitly in the Bible or other ancient scriptures, yet we find that the dimensions given by God to Noah for the Ark and to Moses for the Ark of the Covenant both reflect a 5 to 3 proportion, Fibonacci numbers with a ratio of 1.666, and a reasonably close approximation to Phi.  The Kaaba, the most sacred site of Islam in Mecca, is located very close to the golden ratio of the distance between the Earth’s north and south poles.  Curiously enough, even the symbol for Phi, a circle with a line drawn through it, can be thought to represent a zero, or void, divided by one, or Unity, to create beauty, analogous to God creating the universe from nothing.
+      </p>
+         
+</div>
+
+
+<section class="d-flex flex-column justify-content-center" data-bs-parallax-bg="true" id="page1" style="background-image: url(https://static3.bigstockphoto.com/1/5/2/large1500/251500048.jpg);color: rgb(0,0,0);width: 100%;height: 87vh;background-position: center;background-size: cover;background-repeat: no-repeat;background-color: #cdd2d5;"></section>
+  <div style="width: 100%; height: auto; background: white; color: #131419; padding: 40px;" id="seventh">
+    <center><h3 style="margin-top: 20px; margin-bottom: 30px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">Mathematics of Golden Ratio</h3></center>
+    <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+      The term "golden section" (in German, goldener Schnitt or der goldene Schnitt) seems to first have been used by Martin Ohm in the 1835 2nd edition of his textbook Die Reine Elementar-Mathematik (Livio 2002, p. 6). The first known use of this term in English is in James Sulley's 1875 article on aesthetics in the 9th edition of the Encyclopedia Britannica. The symbol phi ("phi") was apparently first used by Mark Barr at the beginning of the 20th century in commemoration of the Greek sculptor Phidias (ca. 490-430 BC), who a number of art historians claim made extensive use of the golden ratio in his works (Livio 2002, pp. 5-6). Similarly, the alternate notation tau is an abbreviation of the Greek tome, meaning "to cut."
+
+    </p>
+
+
+    <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+      In the Season 1 episode "Sabotage" (2005) of the television crime drama NUMB3RS, math genius Charlie Eppes mentions that the golden ratio is found in the pyramids of Giza and the Parthenon at Athens. Similarly, the character Robert Langdon in the novel The Da Vinci Code makes similar such statements (Brown 2003, pp. 93-95). However, claims of the significance of the golden ratio appearing prominently in art, architecture, sculpture, anatomy, etc., tend to be greatly exaggerated.
+
+    </p>
+
+    <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+      phi has surprising connections with continued fractions and the Euclidean algorithm for computing the greatest common divisor of two integers.
+
+    </p>
+
+    <div style="text-align: center;">
+      <img src="https://mathworld.wolfram.com/images/eps-gif/GoldenRatio_1401.gif" style="width: 30vw; margin: 20px; margin-bottom:40px" data-aos="zoom-in-right" data-aos-delay="400">
+     
+    </div>          
+    
+       
+     <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+      Given a rectangle having sides in the ratio 1:x, phi is defined as the unique number x such that partitioning the original rectangle into a square and new rectangle as illustrated above results in a new rectangle which also has sides in the ratio 1:x (i.e., such that the yellow rectangles shown above are similar). Such a rectangle is called a golden rectangle, and successive points dividing a golden rectangle into squares lie on a logarithmic spiral, giving a figure known as a whirling square.
+     
+     </p>
+
+     <p style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">
+      Based on the above definition, it can immediately be seen that
+       <br>
+       <br>
+    <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation1.gif" alt="" style="margin-left: 100px;" data-aos="fade-right" data-aos-delay="200">
+       <br>
+       <br>
+       giving 
+          <br>
+          <br>
+      
+        <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation2.gif" alt="" style="margin-left: 100px;" data-aos="fade-right" data-aos-delay="200">
+
+     <div style="text-align: center;">
+      <img src="https://mathworld.wolfram.com/images/eps-gif/GoldenRatioExtremeAndMean_1000.gif" style="width: 30vw; margin: 20px; margin-bottom:40px" data-aos="zoom-in-right" data-aos-delay="400">
+     
+    </div> 
+    <p style=" font-family: Amarante">
+    Euclid ca. 300 BC gave an equivalent definition of phi by defining it in terms of the so-called "extreme and mean ratios" on a line segment, i.e., such that</p>
+      <br>
+     <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation3.gif" alt="" style="margin-left: 100px;" data-aos="fade-right" data-aos-delay="200">
+      <br>
+      <br>
+       <p style=" font-family: Amarante">  for the line segment AB illustrated above (Livio 2002, pp. 3-4). Plugging in,</p>
+      <br>
+       <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation4.gif" alt="" style="margin-left: 100px;" data-aos="fade-right" data-aos-delay="200">
+      <br>
+    <br>
+      <p style=" font-family: Amarante">and clearing denominators gives</p>
+    
+      <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation5.gif" alt="" style="margin-left: 100px;" data-aos="fade-right" data-aos-delay="200">
+    <br>
+     <br>
+    <p style=" font-family: Amarante">which is exactly the same formula obtained above (and incidentally means that phi is an algebraic number of degree 2.) Using the quadratic equation and taking the positive sign (since the figure is defined so that phi>1) gives the exact value of phi, namely</p>
+      <br>
+      
+      <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline17.gif" alt="" style="margin-left: 100px;" data-aos="fade-right" data-aos-delay="200">
+      <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline18.gif" alt="" style="" data-aos="fade-right" data-aos-delay="200">
+      <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline19.gif" alt="" style="" data-aos="fade-right" data-aos-delay="200">
+      <br>
+      <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline18.gif" alt="" style="margin-left: 115px;" data-aos="fade-right" data-aos-delay="200">
+      <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline22.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+
+        <br>
+        <br>
+        <p style=" font-family: Amarante">(OEIS A001622). Prime numbers appearing in consecutive digits of the decimal expansion (starting with the first) are known as phi-primes.</p>
+        
+         <br>
+         <p style=" font-family: Amarante">In an apparent blatant misunderstanding of the difference between an exact quantity and an approximation, the character Robert Langdon in the novel The Da Vinci Code incorrectly defines the golden ratio to be exactly 1.618 (Brown 2003, pp. 93-95).</p>
+          <br>
+          
+
+    <p style=" font-family: Amarante">The legs of a golden triangle (an isosceles triangle with a vertex angle of 36 degrees) are in a golden ratio to its base and, in fact, this was the method used by Pythagoras to construct phi. The ratio of the circumradius to the length of the side of a decagon is also phi,</p>
+        <br>
+        
+        <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation6.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+          <br>
+          <br>
+          <p style=" font-family: Amarante">Bisecting a (schematic) Gaullist cross also gives a golden ratio (Gardner 1961, p. 102).</p>
+          
+          <br>
+
+          <p style=" font-family: Amarante">Exact trigonometric formulas for phi include</p>
+             <br>
+             <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline17.gif" alt="" style="margin-left: 100px;" data-aos="fade-right" data-aos-delay="200">
+             <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline18.gif" alt="" style="" data-aos="fade-right" data-aos-delay="200">
+             <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline29.gif" alt="" style="" data-aos="fade-right" data-aos-delay="200">
+           <br>
+           <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline18.gif" alt="" style="margin-left: 115px;" data-aos="fade-right" data-aos-delay="200">
+      <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline32.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+              <br>
+              <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline18.gif" alt="" style="margin-left: 115px;" data-aos="fade-right" data-aos-delay="200">
+              <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline35.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+              <br>
+              <br>
+              <p style=" font-family: Amarante">The golden ratio is given by the series</p>
+
+                <br>
+                <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation7.gif" alt="" style=" margin-left: 110px; " data-aos="zoom-in-right" data-aos-delay="300">
+                  <br>
+                  <br>
+                  <p style=" font-family: Amarante">(B. Roselle). Another fascinating connection with the Fibonacci numbers is given by the series</p>
+                 
+                      <br>
+                      <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation8.gif" alt="" style=" margin-left: 110px; " data-aos="fade-right" data-aos-delay="200">
+                <br>
+                <br>
+                <p style=" font-family: Amarante">  A representation in terms of a nested radical is</p>
+             
+                <br>
+                <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation9.gif" alt="" style=" margin-left: 110px; " data-aos="fade-right" data-aos-delay="200">
+              <br>
+              <br>
+              <p style=" font-family: Amarante">(Livio 2002, p. 83). This is equivalent to the recurrence equation</p>
+            
+              <br>
+              <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation10.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+          
+              <br>
+              <br>
+              <p style=" font-family: Amarante">with a_1=1, giving lim_(n->infty)a_n=phi.</p>
+      
+              <br>
+              <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline17.gif" alt="" data-aos="fade-right" data-aos-delay="200"> is the "worst" real number for rational approximation because its continued fraction representation
+<br>
+<br>
+<img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline17.gif" alt="" style="margin-left: 100px;" data-aos="fade-right" data-aos-delay="200">
+<img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline18.gif" alt="" style="" data-aos="fade-right" data-aos-delay="200">
+<img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline41.gif" alt="" style="" data-aos="fade-right" data-aos-delay="200">
+     <br>
+     <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline18.gif" alt="" style="margin-left: 115px;" data-aos="fade-right" data-aos-delay="200">
+     <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline44.gif" alt="" style="  " data-aos="fade-right" data-aos-delay="200">
+
+         <br>
+         <br>
+         <p style=" font-family: Amarante">(OEIS A000012; Williams 1979, p. 52; Steinhaus 1999, p. 45; Livio 2002, p. 84) has the smallest possible term (1) in each of its infinitely many denominators, thus giving convergents that converge more slowly than any other continued fraction. In particular, the convergents x_n=p_n/q_n are given by the quadratic recurrence equation</p>
+    
+           <br>
+           <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation11.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+           <br>
+           <br>
+           <p style=" font-family: Amarante">with <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline46.gif" alt=""  data-aos="fade-right" data-aos-delay="200">, which has solution</p>
+     
+            <br>
+            <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation12.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+                     <br>
+                     <br>
+                     <p style=" font-family: Amarante">where F_n is the nth Fibonacci number. This gives the first few convergents as 1, 2, 3/2, 5/3, 8/5, 13/8, 21/13, 34/21, ... (OEIS A000045 and A000045), which are good to 0, 0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 5, ... (OEIS A114540) decimal digits, respectively.</p>
+ 
+              <br>
+
+              <p style=" font-family: Amarante">As a result,</p>
+         
+         <br>
+         <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation13.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+           
+            <br>
+            <br>
+            <p style=" font-family: Amarante">as first proved by Scottish mathematician Robert Simson in 1753 (Wells 1986, p. 62; Livio 2002, p. 101).</p>
+                      
+                      <br>
+
+                      <p style=" font-family: Amarante">The golden ratio also satisfies the recurrence relation</p>
+<img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation14.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+            <br>
+            <br>
+            <p style=" font-family: Amarante">Taking n=1 gives the special case</p>
+            
+            <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation15.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+            <br>
+            <br>
+            <p style=" font-family: Amarante">Treating above as a linear recurrence equation</p>
+            
+            <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation16.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+            <br>
+            <br>
+            <p style=" font-family: Amarante">in <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation16.gif" alt="">, setting <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline51.gif" alt="" data-aos="fade-right" data-aos-delay="200"> and <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline52.gif" alt="" style="" data-aos="fade-right" data-aos-delay="200">, and solving gives</p>
+          
+            <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation17.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+            <br>
+            <br>
+            <p style=" font-family: Amarante">as expected. The powers of the golden ratio also satisfy</p>
+          
+            <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation18.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+            <br>
+            <br>
+            <p style=" font-family: Amarante">where <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline53.gif" alt="" data-aos="fade-right" data-aos-delay="200"> is a Fibonacci number (Wells 1986, p. 39).</p>
+                 
+                 <br>
+                 <p style=" font-family: Amarante">The sine of certain complex numbers involving phi gives particularly simple answers, for example</p>
+                     
+                     <br>
+                     <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline55.gif" alt="" style="margin-left: 130px;" data-aos="fade-right" data-aos-delay="200">
+                     <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline56.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                     <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline57.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                          <br>
+                          <br>
+                          <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline58.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+                          <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline56.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                             <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline60.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                        <br>
+                        <br>
+                        <p style=" font-family: Amarante">(D. Hoey, pers. comm.).</p>
+                        <div style="text-align: center;">
+                          <img src="https://mathworld.wolfram.com/images/eps-gif/GoldenRatioRectangle_1000.gif" style="width: 30vw; margin: 20px; margin-bottom:40px" data-aos="zoom-in-right" data-aos-delay="400" data-aos="fade-right" data-aos-delay="200">
+                           </div> 
+                           <p style=" font-family: Amarante">In the figure above, three triangles can be inscribed in the rectangle ABCD of arbitrary aspect ratio 1:r such that the three right triangles have equal areas by dividing AB and BC in the golden ratio. Then</p>
+                          
+                           <br>
+                           <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline65.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+                           <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline56.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                           <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline67.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                           <br>
+                           <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline68.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+                           <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline56.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                           <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline70.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                                 <br>
+                                 <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline71.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+                                 <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline56.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                                 <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline73.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                              <br>
+                              <br>
+                              <p style=" font-family: Amarante">which are all equal. The converse is also true, namely if the adjacent sides of a rectangle are divided in any ratio and connected in the same way, then if the areas of the three outer triangles are all equal, both divided sides are in the golden ratio (D. J. Lewis, pers. comm., Jun. 11, 2009).</p>
+                              <div style="text-align: center;">
+                                <img src="https://mathworld.wolfram.com/images/gifs/GoldenRatioRecurrence.jpg" style="width: 30vw; margin: 20px; margin-bottom:40px" data-aos="zoom-in-right" data-aos-delay="400">
+                                 </div> 
+                                 <br>
+                                 <br>
+                                 <p style=" font-family: Amarante">The substitution system</p>
+                                
+                                 <br>
+                                 <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline74.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+                                 <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline75.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                                 <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline76.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                                <br>
+                                <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline77.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+                                <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline75.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                                <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline79.gif" alt="" data-aos="fade-right" data-aos-delay="200">
+                                 <br>
+                                 <br>
+                                 <p style=" font-family: Amarante">gives</p>
+                                 <br>
+                          
+                                 <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation19.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+                                    <br>
+                                    <br>
+                                    <p style=" font-family: Amarante">giving rise to the sequence</p>
+                          
+                                    <br>
+                                    <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/NumberedEquation20.gif" alt="" style="margin-left: 110px;" data-aos="fade-right" data-aos-delay="200">
+                                              <br>
+                                              <br>
+                                              <p style=" font-family: Amarante">(OEIS A003849). Here, the zeros occur at positions 1, 3, 4, 6, 8, 9, 11, 12, ... (OEIS A000201), and the ones occur at positions 2, 5, 7, 10, 13, 15, 18, ... (OEIS A001950). These are complementary Beatty sequences generated by |_nphi_| and |_nphi^2_|. This sequence also has many connections with the Fibonacci numbers. It is plotted above (mod 2) as a recurrence plot.</p>
+                                              <div style="text-align: center;">
+                                                <img src="https://mathworld.wolfram.com/images/eps-gif/GoldenRatioKhinchinLevy_1000.gif" style="width: 30vw; margin: 20px; margin-bottom:40px" data-aos="zoom-in-right" data-aos-delay="400">
+                                                 </div> 
+
+                                                 <p style=" font-family: Amarante">Let the continued fraction of phi be denoted [a_0;a_1,a_2,...] and let the denominators of the convergents be denoted q_1, q_2, ..., q_n. As can be seen from the plots above, the regularity in the continued fraction of phi means that phi is one of a set of numbers of measure 0 whose continued fraction sequences do not converge to Khinchin's constant or the Lévy constant.</p>
+
+ <br>
+ <p style=" font-family: Amarante">The golden ratio has Engel expansion 1, 2, 5, 6, 13, 16, 16, 38, 48, 58, 104, ... (OEIS A028259).</p>
+                                                 <div style="text-align: center;">
+                                                  <img src="https://mathworld.wolfram.com/images/eps-gif/GoldenRatioIntervals_800.gif" style="width: 30vw; margin: 20px; margin-bottom:40px" data-aos="zoom-in-right" data-aos-delay="400">
+                                                   </div>
+                                                  
+                                                   <p style=" font-family: Amarante">Steinhaus (1999, pp. 48-49) considers the distribution of the fractional parts of <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline89.gif" alt="" data-aos="fade-right" data-aos-delay="200"> in the intervals bounded by 0, 1/n, 2/n, ..., (n-1)/n, 1, and notes that they are much more uniformly distributed than would be expected due to chance (i.e., <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline93.gif" alt=""> is close to an equidistributed sequence). In particular, the number of empty intervals for n=1, 2, ..., are a mere 0, 0, 0, 0, 0, 0, 1, 0, 2, 0, 1, 1, 0, 2, 2, ... (OEIS A036414). The values of n for which no bins are left blank are then given by 1, 2, 3, 4, 5, 6, 8, 10, 13, 16, 21, 34, 55, 89, 144, ... (OEIS A036415). Steinhaus (1983) remarks that the highly uniform distribution has its roots in the continued fraction for <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline96.gif" alt="">.</p>
+                           
+                           <br>
+                           <p style=" font-family: Amarante">The sequence <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline97.gif" alt="" data-aos="fade-right" data-aos-delay="200">, of power fractional parts, where <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline98.gif" alt="" data-aos="fade-right" data-aos-delay="200"> is the fractional part, is equidistributed for almost all real numbers <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline99.gif" alt="" data-aos="fade-right" data-aos-delay="200">, with the golden ratio being one exception.</p>
+                                                   
+                                                   <br>
+                                                   <p style=" font-family: Amarante">Salem showed that the set of Pisot numbers is closed, with <img src="https://mathworld.wolfram.com/images/equations/GoldenRatio/Inline100.gif" alt="" data-aos="fade-right" data-aos-delay="200"> the smallest accumulation point of the set (Le Lionnais 1983).</p>
+
+
+
+
+</p>
+</div>
+
+
+<section class="d-flex flex-column justify-content-center" data-bs-parallax-bg="true" id="page1" style="background-image: url(https://sundayisforlovers.files.wordpress.com/2013/09/the-golden-ratio-spiral.jpg);color: rgb(0,0,0);width: 100%;height: 87vh;background-position: center;background-size: cover;background-repeat: no-repeat;background-color: #cdd2d5;"></section>
+
+<div style="width: 100%; height: auto; background: white; color: #131419; padding: 40px;" id="eightth">
+  <center><h3 style="margin-top: 20px; margin-bottom: 30px; font-family: Amarante, cursive;" data-aos="fade-right" data-aos-delay="200">REFERENCES FOR CONTENT: </h3></center>
+    <table>
+
+     
+
+      <tr style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200" >
+
+        <td>Golden ratio by wolfram </td>
+        <td> <a href="https://mathworld.wolfram.com/GoldenRatio.html"><i class="ion-android-arrow-forward" style="font-size: 30px; padding: 0; margin: 0;"></i></a></td>  
+        
+    </tr>
+
+    <tr style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+
+      <td>Golden ratio - Wikipedia </td>
+      <td><a href="https://www.canva.com/learn/what-is-the-golden-ratio/"><i class="ion-android-arrow-forward" style="font-size: 30px; padding: 0; margin: 0;"></i></a></td>  
+      
+  </tr>
+
+  <tr style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+
+    <td>Golden ratio - Britannica </td>
+    <td><a href="https://www.britannica.com/science/golden-ratio"><i class="ion-android-arrow-forward" style="font-size: 30px; padding: 0; margin: 0;"></i></a></td>  
+    
+</tr>
+
+<tr style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+
+  <td>Golden ratio - livescience </td>
+  <td><a href="https://www.livescience.com/37704-phi-golden-ratio.html"><i class="ion-android-arrow-forward" style="font-size: 30px; padding: 0; margin: 0;"></i></a></td>  
+  
+</tr>
+
+<tr style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+
+  <td>Golden ratio - drawpaintacademy </td>
+  <td><a href="https://drawpaintacademy.com/golden-ratio-in-art/"><i class="ion-android-arrow-forward" style="font-size: 30px; padding: 0; margin: 0;"></i></a></td>  
+  
+</tr>
+    
+<tr style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+
+  <td>Golden ratio - goldenratioandphi.weebly.com </td>
+  <td><a href="https://goldenratioandphi.weebly.com/the-golden-ratio-in-history.html"><i class="ion-android-arrow-forward" style="font-size: 30px; padding: 0; margin: 0;"></i></a></td>  
+  
+</tr>
+    
+<tr style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+
+  <td>Golden ratio - medium.com </td>
+  <td><a href="https://medium.com/thinking-design/the-golden-ratio-how-why-to-use-it-in-design-3ea6f943f8af"><i class="ion-android-arrow-forward" style="font-size: 30px; padding: 0; margin: 0;"></i></a> </td>  
+  
+</tr>
+
+<tr style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+
+  <td>Golden ratio - treehugger.com </td>
+  <td><a href="https://www.treehugger.com/how-golden-ratio-manifests-nature-4869736"><i class="ion-android-arrow-forward" style="font-size: 30px; padding: 0; margin: 0;"></i></a></td>  
+  
+</tr>
+  
+<tr style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+
+  <td>Golden ratio - www.nationalgeographic.org </td>
+  <td><a href="https://www.nationalgeographic.org/media/golden-ratio/#:~:text=a%2Fb).-,The%20golden%20ratio%20is%20about%201.618%2C%20and%20represented,the%20Greek%20letter%20phi%2C%20%CE%A6.&text=The%20golden%20ratio%20is%20sometimes,often%20be%20a%20Fibonacci%20number."><i class="ion-android-arrow-forward" style="font-size: 30px; padding: 0; margin: 0;"></i></a> </td>  
+  
+</tr>
+
+<tr style="margin-bottom: 40px; font-family: Amarante, cursive;" data-aos="fade-left" data-aos-delay="200">
+
+  <td>Golden ratio - mathsisfun.com </td>
+  <td><a href="https://www.mathsisfun.com/numbers/nature-golden-ratio-fibonacci.html"><i class="ion-android-arrow-forward" style="font-size: 30px; padding: 0; margin: 0;"></i></a></td>  
+  
+</tr>
+  
+  </table>
+
+</div>
+
+<section class="d-flex flex-column justify-content-center" data-bs-parallax-bg="true" id="page1" style="background-image: url(https://www.pixel4k.com/wp-content/uploads/2019/03/spiral-shapes-abstract-4k_1551646253.jpg);color: rgb(0,0,0);width: 100%;height: 87vh;background-position: center;background-size: cover;background-repeat: no-repeat;background-color: #cdd2d5;"></section>
+
+<footer class="footer-distributed" style="margin-top: 0;">
+ 
+  <div class="footer-left" >
+
+  <h3 style="font-family: Amarante, cursive;"><img src="assets/img/image111-removebg-preview.png" style="height: 50px; width: 60px;">Golden <span>Theory</span></h3>
+
+  <p class="footer-links">
+  <a href="home.html">Home</a>
+·
+  <a href="home.html">Team</a>
+·
+  <a href="home.html">About</a>
+  ·
+<a href="#">FAQs</a>
+·
+<a href="gallery.html">Gallery</a>
+
+  </p>
+
+  <p class="footer-company-name">Golden Theory &copy; 2020</p>
+  </div>
+
+  <div class="footer-center">
+
+  <div>
+  <i class="fa fa-map-marker-alt"></i>
+  <p><span>#147, #148 Industrial Area Phase 1</span> Chandigarh, India</p>
+  </div>
+
+  <div>
+  <i class="fa fa-phone"></i>
+  <p>+91 xxx xxx xxxx</p>
+  </div>
+
+  <div>
+  <i class="fa fa-envelope"></i>
+  <p><a href="mailto:support@company.com">contact@goldentheory.com</a></p>
+  </div>
+
+  </div>
+
+  <div class="footer-right">
+
+  <p class="footer-company-about">
+  <span>About the website</span>
+    Golden Theory is a website to learn about golden ratio ,golden spiral &amp; many other concepts.
+  </p>
+
+  <div class="footer-icons">
+
+  <a href="#"><i class="fab fa-facebook s-icon-1"></i></a>
+  <a href="#"><i class="fab fa-twitter s-icon-2"></i></a>
+  <a href="#"><i class="fab fa-linkedin s-icon-3"></i></a>
+  <a href="#"><i class="fab fa-github s-icon-4"></i></a>
+
+  </div>
+
+  </div>
+
+  </footer>
+
+     
+
+
+
+
+
+
+
+
+
+    <!-- Button trigger modal -->
+<button type="button btn-danger" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px; overflow: hidden; background: #f5ebec;  /* fallback for old browsers */background: -webkit-linear-gradient(to right, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */background: linear-gradient(to right, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */color:#FFF;border-radius:50px; border: 2px solid rgb(206, 205, 205); text-align:center; box-shadow: 0px 0px 30px rgba(127, 137, 161, 1);" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  <img src="assets/img/output-onlinepngtools-removebg-preview.png" class="logo-animate" style="margin-left: -8px; height: 50px; width: 50px;">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalLongTitle" style="color: black; padding-left: 45%; ">INDEX </h5> 
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="box-shadow: 0 0 0 0;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style=" margin-top: -10px;">
+        <a class="btn btn-light" style="text-decoration: none; width: 100%;" href = "#first">What is Golden Ratio ?</a>
+      </div>
+      <div class="modal-body" style=" margin-top: -10px;">
+        <a class="btn btn-light" style="text-decoration: none; width: 100%;" href = "#second">Emergence Theory and the Golden Ratio</a>
+      </div>
+      <div class="modal-body" style=" margin-top: -10px;">
+        <a class="btn btn-light" style="text-decoration: none; width: 100%;" href = "#third">Goden ratio in Quasicrystals</a>
+      </div>
+      <div class="modal-body" style="margin-top: -10px;">
+        <a class="btn btn-light" style="text-decoration: none; width: 100%;" href = "#fourth">Golden Ratio In Paintings</a>
+      </div>
+      <div class="modal-body" style="margin-top: -10px;">
+        <a class="btn btn-light" style="text-decoration: none; width: 100%;" href = "#fifth">Golden Ratio In Solar System and Universe</a>
+      </div>
+      <div class="modal-body" style=" margin-top: -10px;">
+        <a class="btn btn-light" style="text-decoration: none; width: 100%;" href = "#sixth">Spiritual Aspects about Golden Ratio</a>
+      </div>
+      <div class="modal-body" style=" margin-top: -10px;">
+        <a class="btn btn-light" style="text-decoration: none; width: 100%;" href = "#seventh">Mathematics of Golden Ratio</a>
+      </div>
+      <div class="modal-body" style=" margin-top: -10px;">
+        <a class="btn btn-light" style="text-decoration: none; width: 100%;" href = "#eightth">REFERENCES</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+
+</html>
