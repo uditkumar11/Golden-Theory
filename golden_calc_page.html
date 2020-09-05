@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Ratio Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a98aba4705.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+    *{
+  box-sizing:border-box;
+}
+body{
+  margin:0;
+  padding: 0;
+}
+.container{
+  margin: auto;
+  max-width:1200px;
+  padding: 0 20px;
+  justify-content:space-between;
+}
+.img{
+ background-image: url(https://images.unsplash.com/photo-1554595666-19ceabf46a84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
+ background-size:cover;
+ background-repeat:no-repeat;
+ padding: 40px 0 100px;
+ background-attachment: fixed;
+}
+button{
+    cursor: pointer;
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+a{
+  color:white;
+  font-weight:700;
+  font-size:15px;
+  font-family:Sans-serif;
+  text-decoration:none;
+
+}
+.title1{
+  color: chartreuse;
+  font-family:'Quicksand',sans-serif;
+  letter-spacing:2px;
+  font-size:20px;
+
+
+}
+.title2{
+  color:white;
+  font-family:'Quicksand',sans-serif;
+  font-size:40px;
+  font-weight:bold;
+}
+.introduce{
+ color:#ffffffb3;
+ font-family:'Quicksand',sans-serif;
+ line-height: 1.5;
+ font-size:17px;
+
+}
+.jotform-icon{
+  background-image:url("https://files.startupranking.com/startup/thumb/37832_dd0dcdb7463391d8ee4a9b7468e9f5aa930e359e_jotform_m.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  margin-bottom:70px;
+}
+.button{
+  padding:12px 17px;
+  border-radius:5px;
+  border:0;
+  font-family:'Quicksand',sans-serif;
+  font-weight:bold;
+  background-color:white;
+  font-size:100%;
+  letter-spacing:0.5px;
+  margin-top:5px;
+  transition: 0.2s ease-in-out;
+}
+.button:hover,.button:focus{
+    background-color:rgb(219, 219, 219);
+}
+.title3{
+  font-family:'Quicksand',sans-serif;
+  font-size:40px;
+  text-align:center;
+  margin-top:90px;
+}
+.icon1-img{
+   background-repeat:no-repeat;
+  background-size:cover;
+  width:120px;
+  height:120px;
+}
+
+.icon-description{
+display: block;
+text-align:center;
+font-family:'Quicksand',sans-serif;
+color:#000000b3;
+font-weight:500;
+font-size:15px;
+}
+
+.icon-list{
+  display:flex;
+  flex-wrap:wrap;
+}
+.three-icon{
+  flex:1;
+  padding:30px;
+}
+.icon-title{
+  font-family:'Quicksand',sans-serif;
+}
+.page2{
+  text-align:center;
+}
+.page3{
+ background-color:#fbfbfb;
+
+}
+.page3-box{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  padding: 20px 0;
+}
+.page3-img{
+ max-width:540px;
+width:100%;
+  
+}
+.information{
+flex:1;
+  padding-left:70px;
+}
+button.learn-more{
+  background-color:#292b2c;
+  color:white;
+  transition: 0.2s ease-in-out;
+}
+button.learn-more:hover,button.learn-more:focus{
+  background-color:#525355;
+  color:white;
+}
+.info-title{
+  font-family:'Quicksand',sans-serif;
+  font-size:30px;
+  font-weight:bold;
+
+}
+.info-all{
+  color:#000000b3;
+  margin-bottom:20px;
+  line-height:1.4;
+  font-size:25px;
+
+}
+.get-free{
+   background-color:#292b2c;
+  color:white;
+}
+.memberships{
+  display:flex;
+  flex-wrap:wrap;
+}
+.member{
+flex:auto;
+padding:60px;
+text-align:center;  
+font-family:'Quicksand',sans-serif;
+border-radius:4px;
+}
+span{
+  font-size:40px;
+
+}
+.mem-title{
+  font-size:26px;
+  font-weight:bold;
+}
+.orange{
+  background-color:#ff8001;
+  color:white;
+}
+.page4{
+  padding:80px 0;
+}
+.under{
+  background-color:#f5f5f5;
+  padding:10px;
+  display:flex;
+
+
+}
+footer{
+            position: relative;
+            bottom: 0;
+          }
+          .footer-distributed{
+            background-color: #292c2f;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: bold 16px sans-serif;
+          
+            padding: 55px 50px;
+            margin-top: 80px;
+          }
+          
+          .footer-distributed .footer-left,
+          .footer-distributed .footer-center,
+          .footer-distributed .footer-right{
+            display: inline-block;
+            vertical-align: top;
+          }
+          
+          .footer-distributed .footer-left{
+            width: 40%;
+          }
+          
+          .footer-distributed h3{
+            color:  #ffffff;
+            font: normal 36px 'Cookie', cursive;
+            margin: 0;
+          }
+          
+          .footer-distributed h3 span{
+            color:  #5383d3;
+          }
+          
+          
+          .footer-distributed .footer-links{
+            color:  #ffffff;
+            margin: 20px 0 12px;
+            padding: 0;
+          }
+          
+          .footer-distributed .footer-links a{
+            display:inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color:  inherit;
+          }
+          
+          .footer-distributed .footer-company-name{
+            color:  #8f9296;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+          }
+ 
+ 
+        .footer-distributed .footer-center{
+          width: 35%;
+        }
+        
+        .footer-distributed .footer-center i{
+          background-color:  #33383b;
+          color: #ffffff;
+          font-size: 25px;
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 42px;
+          margin: 10px 15px;
+          vertical-align: middle;
+        }
+        
+        .footer-distributed .footer-center i.fa-envelope{
+          font-size: 17px;
+          line-height: 38px;
+        }
+        
+        .footer-distributed .footer-center p{
+          display: inline-block;
+          color: #ffffff;
+          vertical-align: middle;
+          margin:0;
+        }
+        
+        .footer-distributed .footer-center p span{
+          display:block;
+          font-weight: normal;
+          font-size:14px;
+          line-height:2;
+        }
+        
+        .footer-distributed .footer-center p a{
+          color:  #5383d3;
+          text-decoration: none;;
+        }
+        
+        .footer-distributed .footer-right{
+          width: 20%;
+        }
+        
+        .footer-distributed .footer-company-about{
+          line-height: 20px;
+          color:  #92999f;
+          font-size: 13px;
+          font-weight: normal;
+          margin: 0;
+        }
+        
+        .footer-distributed .footer-company-about span{
+          display: block;
+          color:  #ffffff;
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        
+        .footer-distributed .footer-icons{
+          margin-top: 25px;
+        }
+        
+        .footer-distributed .footer-icons a{
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          cursor: pointer;
+          background-color:  #33383b;
+          border-radius: 2px;
+        
+          font-size: 20px;
+          color: #ffffff;
+          text-align: center;
+          line-height: 35px;
+        
+          margin-right: 3px;
+          margin-bottom: 5px;
+        }
+        
+        
+        @media (max-width: 880px) {
+        
+          .footer-distributed{
+            font: bold 14px sans-serif;
+          
+          }
+        
+          .footer-distributed .footer-left,
+          .footer-distributed .footer-center,
+          .footer-distributed .footer-right{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+          }
+        
+          .footer-distributed .footer-center i{
+            margin-left: 0;
+          }
+          .main {
+            line-height: normal;
+            font-size: auto;
+          }
+        
+        }
+
+ 
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amarante">
+</head>
+<body>
+    
+  <nav class="navbar navbar-light navbar-expand-md" style="background: rgba(255,255,255,1); position: fixed; width: 100%; z-index: 3; box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);">
+      <div class="container-fluid"><a class="navbar-brand" data-aos="fade-right" data-aos-delay="400" href="#" style="color: black;font-size: 25px;letter-spacing: 3px;font-family: Amarante, cursive;"><img src="assets/img/image111-removebg-preview.png" style="height: 40px;width: 45px;">Golden Theory</a><button data-toggle="collapse" class="navbar-toggler"
+              data-target="#navcol-1" data-aos="fade-right" data-aos-delay="500" style="background-color: white;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); height: 30px; width: 30px;"></span></button>
+          <div class="collapse navbar-collapse" id="navcol-1">
+              <ul class="nav navbar-nav ml-auto">
+                  <li class="nav-item" role="presentation"><a class="nav-link active" data-aos="fade-right" data-aos-delay="400" href="home.html" style="color: black;">Home</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" data-aos="fade-right" data-aos-delay="500" href="gallery.html" style="color: black">Gallery</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" data-aos="fade-right" data-aos-delay="600" href="home.html" style="color: black">About</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" data-aos="fade-right" data-aos-delay="700" href="home.html" style="color: black">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+<div class="img">
+  
+ <div class="container text-center" style="margin-top: 100px;"> 
+  <!-- nav bar here -->
+
+   <div class="start">
+     <h2 class="title1 mb-4">Golden Theory</h2>
+     <h1 class="title2 mb-3">Golden Ratio Calculator</h1>
+     <h3 class="introduce mb-5">Calculate your golden ratio using our tools,
+       <br>
+       tap lets begin button to begin.</h3>
+        <a href="#calcButton"><button class="button">Lets Begin</button></a>
+   </div>
+   </div>
+</div>
+<div class="page2">
+  <div class="container">
+    <h2 class="title3"></h2>
+    <div class="icon-list">
+     <div class="three-icon">
+        <i class="fas fa-question-circle" style="color: darkcyan; font-size: 100px; margin-bottom: 30px;"></i>
+        <h3 class="icon-title">What is Golden Ratio and ... </h3>
+      <div class="icon-description">What is all the fuss about the famous golden ratio ?</div>
+      <button class="button learn-more" style="border-radius: 50%; height: 50px; margin-top: 30px; box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);"><i class="fas fa-arrow-right"></i></button>
+      </div>
+       <div class="three-icon">
+        <i class="fas fa-book-reader" style="color: #ff8001; font-size: 100px; margin-bottom: 30px;"></i>
+        <h3 class="icon-title">Golden ratio in Quasicrystals</h3>
+      <div class="icon-description">Quasicrystals are golden ratio based geometric languages ...</div>
+      <button class="button learn-more" style="border-radius: 50%; height: 50px; margin-top: 30px; box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);"><i class="fas fa-arrow-right"></i></button>
+      </div>
+<div class="three-icon">
+    <i class="fas fa-chalkboard-teacher" style="color: dodgerblue; font-size: 100px; margin-bottom: 30px;"></i>
+  <h3 class="icon-title">Learn by Interactive Examples</h3>
+      <div class="icon-description">Learn more by interactive examples. Tap the below icon.</div>
+      <button class="button learn-more" style="border-radius: 50%; height: 50px; margin-top: 30px; margin-bottom: 30px; box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page3">
+  <div class="container">
+    <div class="page3-box">
+      <img class="page3-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/344846/2.png"></img>
+<div class="information">
+  <div class="info-title"> Golden Ratio Calculator</div>
+  <br>
+  <div class="info-all">
+    Here, we have added a face golden ratio calculator to calculate your ratio. It measures dimension of all the parts of your face (Eg. eyes, nose, etc.) and then calculates the ratio of those dimensions to give your face ratio.
+  </div>
+  <button class="button learn-more" style="box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);">Learn More</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page4" id = "calcButton">
+  <div class="container">
+    <div class="memberships">
+      
+ <div class="member">
+      <div class="mem-title">Download Golden Ratio Calculator</div>
+      <a download="assets/main/setup/face-ratio.exe" target="blank"><button class="button learn-more" style="margin-top: 30px; box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);">Download Here</button></a>
+    
+    </div>
+   
+</div>
+</div>
+<footer class="footer-distributed" style="margin-top: 40px;">
+ 
+  <div class="footer-left" >
+
+  <h3 style="font-family: Amarante, cursive;"><img src="assets/img/image111-removebg-preview.png" style="height: 50px; width: 60px;">Golden <span>Theory</span></h3>
+
+  <p class="footer-links">
+  <a href="home.html">Home</a>
+·
+  <a href="home.html">Team</a>
+·
+  <a href="home.html">About</a>
+  ·
+<a href="#">FAQs</a>
+·
+<a href="gallery.html">Gallery</a>
+
+  </p>
+
+  <p class="footer-company-name">Golden Theory &copy; 2020</p>
+  </div>
+
+  <div class="footer-center">
+
+  <div>
+  <i class="fa fa-map-marker-alt"></i>
+  <p><span>#147, #148 Industrial Area Phase 1</span> Chandigarh, India</p>
+  </div>
+
+  <div>
+  <i class="fa fa-phone"></i>
+  <p>+91 xxx xxx xxxx</p>
+  </div>
+
+  <div>
+  <i class="fa fa-envelope"></i>
+  <p><a href="mailto:support@company.com">contact@goldentheory.com</a></p>
+  </div>
+
+  </div>
+
+  <div class="footer-right">
+
+  <p class="footer-company-about">
+  <span>About the website</span>
+    Golden Theory is a website to learn about golden ratio ,golden spiral &amp; many other concepts.
+  </p>
+
+  <div class="footer-icons">
+
+  <a href="#"><i class="fab fa-facebook s-icon-1"></i></a>
+  <a href="#"><i class="fab fa-twitter s-icon-2"></i></a>
+  <a href="#"><i class="fab fa-linkedin s-icon-3"></i></a>
+  <a href="#"><i class="fab fa-github s-icon-4"></i></a>
+
+  </div>
+
+  </div>
+
+  </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
