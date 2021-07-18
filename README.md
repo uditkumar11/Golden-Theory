@@ -1,4 +1,4 @@
-# Golden-Theory (Designed by Udit and Piyush)
+# Golden-Theory (Designed by [@uditkumar01](https://github.com/uditkumar01) and [@piyush2961](https://github.com/Piyush2961))
 Its a website to learn about golden theory concepts. And it will help us to visualize golden ratio in nature with the help of images ( Because we know "A picture say thousand than words...") and lot of information that we have add in it. We have added animation to attract user's attention.
 
 
